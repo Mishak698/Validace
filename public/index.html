@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrační formulář</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Registrační formulář</h1>
+  <form id="registerForm">
+    <div class="form-group">
+      <label for="username">Uživatelské jméno:</label>
+      <input type="text" id="username" name="username" required>
+      <div id="usernameError" class="error hidden"></div>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <div id="emailError" class="error hidden"></div>
+    </div>
+    
+    <div class="form-group">
+      <label for="password">Heslo:</label>
+      <input type="password" id="password" name="password" required>
+      <div id="passwordError" class="error hidden"></div>
+    </div>
+    
+    <div class="form-group">
+      <label for="country">Země:</label>
+      <select id="country" name="country" required>
+        <option value="">-- Vyberte zemi --</option>
+      </select>
+      <div id="countryError" class="error hidden"></div>
+    </div>
+    
+    <button type="submit">Registrovat</button>
+  </form>
+  
+  <div id="successMessage" class="hidden"></div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
